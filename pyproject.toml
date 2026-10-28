@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "window59bu-shotorder"
+version = "0.1.0"
+description = "从输入中抽取数值，计算少样本示例的顺序效应相关的比值与占比，分母为零时明确报错"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "window59bu" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://window59bu.github.io"
+Repository = "https://github.com/window59bu/shotorder"
+Issues = "https://github.com/window59bu/shotorder/issues"
+
+[project.scripts]
+shotorder = "shotorder:main"
+
+[tool.setuptools]
+py-modules = ["shotorder"]
